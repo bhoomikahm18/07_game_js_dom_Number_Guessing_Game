@@ -49,5 +49,19 @@ const init = () => {
     hint.classList.remove("success", "error");
 };
 
+guessInput.addEventListener("keydown", (event) => {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        play();
+    }
+});
+restartButton.addEventListener("click", () => {
+    game.style.display = "grid";
+    restartButton.style.display = "none";
+    hint.innerHTML = "";
+    hint.classList.remove("success");
+    init();
+});
+
 checkButton.addEventListener("click", play);
 window.addEventListener("load", init);
