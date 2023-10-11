@@ -30,7 +30,7 @@ h3{
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 1em;
-    margin: 3rm auto 1.5em auto;
+    margin: 2em auto 1.5em auto;
 }
 input[type="number"]{
     width: 100%;
